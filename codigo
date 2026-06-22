@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Blog de Gatinhos 🐱</title>
+  <title>Blog dos Gatinhos 🐱</title>
 
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: #fff0f5;
+      background: #fef6fb;
       color: #333;
     }
 
     header {
-      background: #ff5c8a;
+      background: #ff4f88;
       color: white;
       text-align: center;
       padding: 30px 10px;
@@ -22,108 +22,25 @@
 
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 2.2rem;
+    }
+
+    header p {
+      margin-top: 10px;
     }
 
     .container {
-      max-width: 900px;<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Blog de Gatinhos 🐱</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #fff6f9;
-      color: #333;
-    }
-
-    header {
-      background: #ff8fb1;
-      padding: 20px;
-      text-align: center;
-      color: white;
-    }
-
-    header h1 {
-      margin: 0;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    .cat-card {
-      background: white;
-      border-radius: 12px;
-      padding: 15px;
-      margin-bottom: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    .cat-card h2 {
-      color: #ff4d7d;
-      margin-top: 0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #ff8fb1;
-      color: white;
-      margin-top: 20px;
-    }
-  </style>
-</head>
-
-<body>
-
-  <header>
-    <h1>🐱 Meu Blog de Gatinhos 🐱</h1>
-    <p>Descubra tipos fofos de gatos!</p>
-  </header>
-
-  <div class="container">
-
-    <div class="cat-card">
-      <h2>🐾 Gato Persa</h2>
-      <p>Fofinho, peludo e super calmo. Ama ficar deitado o dia todo.</p>
-    </div>
-
-    <div class="cat-card">
-      <h2>🐾 Siamês</h2>
-      <p>Falante e inteligente, adora interagir com humanos.</p>
-    </div>
-
-    <div class="cat-card">
-      <h2>🐾 Maine Coon</h2>
-      <p>Gigante e gentil, parece um leãozinho doméstico.</p>
-    </div>
-
-    <div class="cat-card">
-      <h2>🐾 Sphynx</h2>
-      <p>Sem pelos, muito carinhoso e curioso.</p>
-    </div>
-
-    <div class="cat-card">
-      <h2>🐾 Gato SRD (Vira-lata)</h2>
-      <p>Único e especial, cheio de personalidade e amor.</p>
-
+      max-width: 1000px;
       margin: auto;
       padding: 20px;
     }
 
     .card {
       background: white;
-      margin: 15px 0;
-      padding: 15px;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      margin: 15px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       transition: transform 0.2s;
     }
 
@@ -132,14 +49,25 @@
     }
 
     .card h2 {
-      color: #ff3d6e;
+      color: #ff2f6d;
+      margin-top: 0;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #ffe1ec;
+      color: #ff2f6d;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      margin-bottom: 10px;
     }
 
     footer {
       text-align: center;
-      padding: 15px;
-      background: #ff5c8a;
+      background: #ff4f88;
       color: white;
+      padding: 15px;
       margin-top: 20px;
     }
   </style>
@@ -147,43 +75,48 @@
 
 <body>
 
-  <header>
-    <h1>🐱 Meu Blog de Gatinhos</h1>
-    <p>Conheça diferentes tipos de gatinhos fofos!</p>
-  </header>
+<header>
+  <h1>🐱 Blog dos Gatinhos</h1>
+  <p>Descubra curiosidades e informações sobre raças de gatos</p>
+</header>
 
-  <main class="container">
+<div class="container">
 
-    <div class="card">
-      <h2>🐾 Gato Persa</h2>
-      <p>Calmo, peludo e muito fofinho. Adora descansar o dia inteiro.</p>
-    </div>
+  <div class="card">
+    <span class="tag">Calmo</span>
+    <h2>🐾 Gato Persa</h2>
+    <p>O Persa é um gato muito tranquilo, peludo e carinhoso. Ele gosta de ambientes calmos e passa grande parte do dia descansando. É ideal para quem quer um gato mais relaxado.</p>
+  </div>
 
-    <div class="card">
-      <h2>🐾 Siamês</h2>
-      <p>Inteligente e super comunicativo, gosta de atenção o tempo todo.</p>
-    </div>
+  <div class="card">
+    <span class="tag">Inteligente</span>
+    <h2>🐾 Siamês</h2>
+    <p>O Siamês é conhecido por ser muito comunicativo e inteligente. Ele gosta de interagir com humanos e pode "conversar" bastante com miados.</p>
+  </div>
 
-    <div class="card">
-      <h2>🐾 Maine Coon</h2>
-      <p>Grande, forte e amigável — parece um leão doméstico.</p>
-    </div>
+  <div class="card">
+    <span class="tag">Grande</span>
+    <h2>🐾 Maine Coon</h2>
+    <p>Um dos maiores gatos domésticos do mundo. Mesmo sendo grande, é super gentil, amigável e brincalhão.</p>
+  </div>
 
-    <div class="card">
-      <h2>🐾 Sphynx</h2>
-      <p>Sem pelos, muito carinhoso e curioso com tudo ao redor.</p>
-    </div>
+  <div class="card">
+    <span class="tag">Exótico</span>
+    <h2>🐾 Sphynx</h2>
+    <p>O Sphynx não tem pelos, o que o torna único. Ele é muito carinhoso, adora calor e fica sempre perto dos donos.</p>
+  </div>
 
-    <div class="card">
-      <h2>🐾 Vira-lata (SRD)</h2>
-      <p>Único, especial e cheio de personalidade. Muito amor envolvido!</p>
-    </div>
+  <div class="card">
+    <span class="tag">Especial</span>
+    <h2>🐾 Vira-lata (SRD)</h2>
+    <p>Os gatos sem raça definida são únicos e cheios de personalidade. Cada um tem seu jeito especial e são muito amorosos.</p>
+  </div>
 
-  </main>
+</div>
 
-  <footer>
-    <p>Feito com ❤️ por um amante de gatos</p>
-  </footer>
+<footer>
+  <p>Feito com ❤️ para amantes de gatos 🐱</p>
+</footer>
 
 </body>
 </html>
