@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog Interativo dos Gatinhos 🐱</title>
+  <title>Blog Supremo dos Gatinhos 🐱</title>
 
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: #fff3f8;
+      background: #fff0f6;
       color: #333;
     }
 
     header {
-      background: linear-gradient(90deg, #ff4f88, #ff7aa8);
+      background: linear-gradient(90deg, #ff4f88, #ff86b0);
       color: white;
       text-align: center;
       padding: 30px 10px;
@@ -22,11 +22,11 @@
 
     header h1 {
       margin: 0;
-      font-size: 2.2rem;
+      font-size: 2.4rem;
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
       padding: 20px;
     }
@@ -36,7 +36,7 @@
       border-radius: 15px;
       margin: 20px 0;
       overflow: hidden;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
       transition: transform 0.2s;
     }
 
@@ -46,7 +46,7 @@
 
     .card img {
       width: 100%;
-      height: 250px;
+      height: 280px;
       object-fit: cover;
     }
 
@@ -54,19 +54,19 @@
       padding: 15px;
     }
 
-    .content h2 {
-      margin-top: 0;
-      color: #ff2f6d;
-    }
-
     .tag {
       display: inline-block;
-      background: #ffe0ec;
+      background: #ffe1ec;
       color: #ff2f6d;
       padding: 5px 10px;
       border-radius: 20px;
       font-size: 12px;
       margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 5px;
+      color: #ff2f6d;
     }
 
     .info {
@@ -102,8 +102,8 @@
 <body>
 
 <header>
-  <h1>🐱 Blog Interativo dos Gatinhos</h1>
-  <p>Clique para ver mais informações sobre cada raça!</p>
+  <h1>🐱 Blog Supremo dos Gatinhos</h1>
+  <p>Descubra raças fofas, curiosidades e informações completas!</p>
 </header>
 
 <div class="container">
@@ -114,14 +114,15 @@
     <div class="content">
       <span class="tag">Calmo</span>
       <h2>🐾 Gato Persa</h2>
-      <p>Um gato peludo, elegante e muito tranquilo.</p>
+      <p>Um dos gatos mais tranquilos e peludos do mundo.</p>
 
-      <button onclick="toggleInfo(this)">Ver mais informações</button>
+      <button onclick="toggleInfo(this)">Ver informações</button>
 
       <div class="info">
-        <p><strong>Personalidade:</strong> calmo, carinhoso e caseiro.</p>
-        <p><strong>Cuidados:</strong> precisa escovação diária por causa dos pelos longos.</p>
-        <p><strong>Expectativa de vida:</strong> 12 a 17 anos.</p>
+        <p><strong>Personalidade:</strong> calmo, doce e caseiro.</p>
+        <p><strong>Origem:</strong> Irã (antiga Pérsia).</p>
+        <p><strong>Cuidados:</strong> escovação diária e atenção aos olhos.</p>
+        <p><strong>Vida média:</strong> 12 a 17 anos.</p>
       </div>
     </div>
   </div>
@@ -130,16 +131,17 @@
   <div class="card">
     <img src="https://cdn2.thecatapi.com/images/ai6.jpg" alt="Gato Siamês">
     <div class="content">
-      <span class="tag">Inteligente</span>
+      <span class="tag">Falante</span>
       <h2>🐾 Gato Siamês</h2>
-      <p>Famoso por ser comunicativo e muito esperto.</p>
+      <p>Super comunicativo e inteligente.</p>
 
-      <button onclick="toggleInfo(this)">Ver mais informações</button>
+      <button onclick="toggleInfo(this)">Ver informações</button>
 
       <div class="info">
-        <p><strong>Personalidade:</strong> falante, ativo e muito sociável.</p>
-        <p><strong>Curiosidade:</strong> ele "conversa" com os donos o tempo todo.</p>
-        <p><strong>Expectativa de vida:</strong> 12 a 20 anos.</p>
+        <p><strong>Personalidade:</strong> ativo, carinhoso e sociável.</p>
+        <p><strong>Origem:</strong> Tailândia.</p>
+        <p><strong>Curiosidade:</strong> ele “conversa” com miados constantes.</p>
+        <p><strong>Vida média:</strong> 12 a 20 anos.</p>
       </div>
     </div>
   </div>
@@ -150,14 +152,15 @@
     <div class="content">
       <span class="tag">Gigante gentil</span>
       <h2>🐾 Maine Coon</h2>
-      <p>Um dos maiores gatos domésticos do mundo.</p>
+      <p>O maior gato doméstico do mundo.</p>
 
-      <button onclick="toggleInfo(this)">Ver mais informações</button>
+      <button onclick="toggleInfo(this)">Ver informações</button>
 
       <div class="info">
-        <p><strong>Personalidade:</strong> brincalhão, dócil e inteligente.</p>
-        <p><strong>Curiosidade:</strong> parece um “gato-leão” pelo tamanho.</p>
-        <p><strong>Expectativa de vida:</strong> 10 a 15 anos.</p>
+        <p><strong>Personalidade:</strong> amigável, brincalhão e inteligente.</p>
+        <p><strong>Origem:</strong> Estados Unidos.</p>
+        <p><strong>Curiosidade:</strong> pode pesar mais de 10 kg.</p>
+        <p><strong>Vida média:</strong> 10 a 15 anos.</p>
       </div>
     </div>
   </div>
@@ -168,14 +171,34 @@
     <div class="content">
       <span class="tag">Exótico</span>
       <h2>🐾 Sphynx</h2>
-      <p>O famoso gato sem pelos, super carinhoso.</p>
+      <p>O famoso gato sem pelos.</p>
 
-      <button onclick="toggleInfo(this)">Ver mais informações</button>
+      <button onclick="toggleInfo(this)">Ver informações</button>
 
       <div class="info">
-        <p><strong>Personalidade:</strong> afetuoso e grudado no dono.</p>
-        <p><strong>Cuidados:</strong> precisa banho frequente por não ter pelos.</p>
-        <p><strong>Expectativa de vida:</strong> 8 a 14 anos.</p>
+        <p><strong>Personalidade:</strong> muito carinhoso e dependente.</p>
+        <p><strong>Origem:</strong> Canadá.</p>
+        <p><strong>Cuidados:</strong> precisa banho frequente.</p>
+        <p><strong>Vida média:</strong> 8 a 14 anos.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- BENGAL -->
+  <div class="card">
+    <img src="https://cdn2.thecatapi.com/images/6J9.jpg" alt="Gato Bengal">
+    <div class="content">
+      <span class="tag">Selvagem</span>
+      <h2>🐾 Bengal</h2>
+      <p>Parece um leopardo em miniatura.</p>
+
+      <button onclick="toggleInfo(this)">Ver informações</button>
+
+      <div class="info">
+        <p><strong>Personalidade:</strong> ativo, curioso e brincalhão.</p>
+        <p><strong>Origem:</strong> EUA (cruzamento com gato-leopardo asiático).</p>
+        <p><strong>Curiosidade:</strong> ama água!</p>
+        <p><strong>Vida média:</strong> 12 a 16 anos.</p>
       </div>
     </div>
   </div>
@@ -183,7 +206,7 @@
 </div>
 
 <footer>
-  <p>Feito com ❤️ para amantes de gatos 🐱</p>
+  <p>🐱 Feito com amor para amantes de gatos ❤️</p>
 </footer>
 
 <script>
@@ -192,7 +215,7 @@
 
     if (info.style.display === "block") {
       info.style.display = "none";
-      button.innerText = "Ver mais informações";
+      button.innerText = "Ver informações";
     } else {
       info.style.display = "block";
       button.innerText = "Ocultar informações";
