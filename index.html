@@ -3,30 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog Fofinho dos Gatinhos 🐱</title>
+  <title>Blog dos Gatinhos 🐱</title>
 
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       background: #fff0f6;
-      color: #333;
     }
 
     header {
-      background: linear-gradient(90deg, #ff4f88, #ff86b0);
+      background: #ff4f88;
       color: white;
       text-align: center;
-      padding: 30px 10px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.4rem;
+      padding: 25px;
     }
 
     .container {
-      max-width: 1100px;
+      max-width: 1000px;
       margin: auto;
       padding: 20px;
     }
@@ -36,22 +30,21 @@
       border-radius: 15px;
       margin: 20px 0;
       overflow: hidden;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
-
-    .card:hover {
-      transform: scale(1.01);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     }
 
     .card img {
       width: 100%;
-      height: 300px;
+      height: 350px;
       object-fit: cover;
     }
 
     .content {
       padding: 15px;
+    }
+
+    h2 {
+      color: #ff2f6d;
     }
 
     .tag {
@@ -61,12 +54,16 @@
       padding: 5px 10px;
       border-radius: 20px;
       font-size: 12px;
-      margin-bottom: 10px;
     }
 
-    h2 {
-      margin-top: 5px;
-      color: #ff2f6d;
+    button {
+      margin-top: 10px;
+      background: #ff4f88;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
     }
 
     .info {
@@ -75,25 +72,11 @@
       line-height: 1.5;
     }
 
-    button {
-      background: #ff4f88;
-      color: white;
-      border: none;
-      padding: 8px 12px;
-      border-radius: 8px;
-      cursor: pointer;
-      margin-top: 10px;
-    }
-
-    button:hover {
-      background: #e63b74;
-    }
-
     footer {
       text-align: center;
+      padding: 15px;
       background: #ff4f88;
       color: white;
-      padding: 15px;
       margin-top: 20px;
     }
   </style>
@@ -102,103 +85,83 @@
 <body>
 
 <header>
-  <h1>🐱 Blog Fofinho dos Gatinhos</h1>
-  <p>Raças famosas, fofas e cheias de personalidade!</p>
+  <h1>🐱 Blog dos Gatinhos Fofos</h1>
+  <p>As raças mais lindas e conhecidas do mundo!</p>
 </header>
 
 <div class="container">
 
-  <!-- PERSA -->
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6" alt="Gato Persa">
-    <div class="content">
-      <span class="tag">Calmo</span>
-      <h2>🐾 Gato Persa</h2>
-      <p>Um dos gatos mais fofos e peludos do mundo.</p>
-
-      <button onclick="toggleInfo(this)">Ver informações</button>
-
-      <div class="info">
-        <p><strong>Personalidade:</strong> tranquilo, carinhoso e caseiro.</p>
-        <p><strong>Origem:</strong> Irã (Pérsia).</p>
-        <p><strong>Cuidados:</strong> escovação diária por causa dos pelos longos.</p>
-        <p><strong>Curiosidade:</strong> adora ficar deitado o dia inteiro.</p>
-      </div>
-    </div>
-  </div>
-
   <!-- SIAMES -->
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1557246565-8a3d3ab5d7f3" alt="Gato Siamês">
+    <img src="siames.jpg" alt="Siamês">
     <div class="content">
       <span class="tag">Falante</span>
-      <h2>🐾 Gato Siamês</h2>
-      <p>Super comunicativo e muito inteligente.</p>
-
-      <button onclick="toggleInfo(this)">Ver informações</button>
-
+      <h2>🐾 Siamês</h2>
+      <p>Extremamente comunicativo e inteligente.</p>
+      <button onclick="toggle(this)">Ver mais</button>
       <div class="info">
-        <p><strong>Personalidade:</strong> ativo, curioso e sociável.</p>
-        <p><strong>Origem:</strong> Tailândia.</p>
-        <p><strong>Curiosidade:</strong> “conversa” com seus donos o tempo todo.</p>
-        <p><strong>Vida média:</strong> 12 a 20 anos.</p>
+        <p><strong>Origem:</strong> Tailândia</p>
+        <p><strong>Personalidade:</strong> ativo e carinhoso</p>
       </div>
     </div>
   </div>
 
   <!-- MAINE COON -->
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1615789591457-74a63395c990" alt="Maine Coon">
+    <img src="mainecoon.jpg" alt="Maine Coon">
     <div class="content">
       <span class="tag">Gigante gentil</span>
       <h2>🐾 Maine Coon</h2>
       <p>Um dos maiores gatos domésticos do mundo.</p>
-
-      <button onclick="toggleInfo(this)">Ver informações</button>
-
+      <button onclick="toggle(this)">Ver mais</button>
       <div class="info">
-        <p><strong>Personalidade:</strong> amigável, brincalhão e dócil.</p>
-        <p><strong>Origem:</strong> Estados Unidos.</p>
-        <p><strong>Curiosidade:</strong> pode parecer um “leãozinho fofinho”.</p>
-        <p><strong>Peso:</strong> até 10 kg ou mais.</p>
+        <p><strong>Origem:</strong> Estados Unidos</p>
+        <p><strong>Personalidade:</strong> dócil e brincalhão</p>
       </div>
     </div>
   </div>
 
-  <!-- BENGAL -->
+  <!-- PERSA -->
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1606214174585-fe31582dc6ee" alt="Gato Bengal">
+    <img src="persa.jpg" alt="Persa">
     <div class="content">
-      <span class="tag">Selvagem</span>
-      <h2>🐾 Bengal</h2>
-      <p>Parece um mini leopardo doméstico.</p>
-
-      <button onclick="toggleInfo(this)">Ver informações</button>
-
+      <span class="tag">Calmo</span>
+      <h2>🐾 Persa</h2>
+      <p>Peludo, elegante e muito tranquilo.</p>
+      <button onclick="toggle(this)">Ver mais</button>
       <div class="info">
-        <p><strong>Personalidade:</strong> energético, curioso e brincalhão.</p>
-        <p><strong>Origem:</strong> cruzamento com gato-leopardo asiático.</p>
-        <p><strong>Curiosidade:</strong> ama brincar com água.</p>
-        <p><strong>Visual:</strong> pelagem manchada selvagem.</p>
+        <p><strong>Origem:</strong> Irã</p>
+        <p><strong>Personalidade:</strong> relaxado e carinhoso</p>
       </div>
     </div>
   </div>
 
-  <!-- RAGDOLL -->
+  <!-- AZUL RUSSO -->
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1618826411640-df7c2f3a7a9b" alt="Ragdoll">
+    <img src="azulrusso.jpg" alt="Azul Russo">
     <div class="content">
-      <span class="tag">Macio</span>
-      <h2>🐾 Ragdoll</h2>
-      <p>Um dos gatos mais dóceis e relaxados do mundo.</p>
-
-      <button onclick="toggleInfo(this)">Ver informações</button>
-
+      <span class="tag">Elegante</span>
+      <h2>🐾 Azul Russo</h2>
+      <p>Gato silencioso, bonito e muito inteligente.</p>
+      <button onclick="toggle(this)">Ver mais</button>
       <div class="info">
-        <p><strong>Personalidade:</strong> extremamente calmo e carinhoso.</p>
-        <p><strong>Curiosidade:</strong> fica “molinho” quando é pego no colo.</p>
-        <p><strong>Origem:</strong> Estados Unidos.</p>
-        <p><strong>Vida média:</strong> 12 a 17 anos.</p>
+        <p><strong>Origem:</strong> Rússia</p>
+        <p><strong>Personalidade:</strong> tímido e afetuoso</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOMBAIM -->
+  <div class="card">
+    <img src="bombaim.jpg" alt="Bombaim">
+    <div class="content">
+      <span class="tag">Pantera mini</span>
+      <h2>🐾 Bombaim</h2>
+      <p>Gato preto brilhante que lembra uma pantera.</p>
+      <button onclick="toggle(this)">Ver mais</button>
+      <div class="info">
+        <p><strong>Origem:</strong> EUA</p>
+        <p><strong>Personalidade:</strong> brincalhão e carinhoso</p>
       </div>
     </div>
   </div>
@@ -210,15 +173,14 @@
 </footer>
 
 <script>
-  function toggleInfo(button) {
-    const info = button.nextElementSibling;
-
+  function toggle(btn) {
+    const info = btn.nextElementSibling;
     if (info.style.display === "block") {
       info.style.display = "none";
-      button.innerText = "Ver informações";
+      btn.innerText = "Ver mais";
     } else {
       info.style.display = "block";
-      button.innerText = "Ocultar informações";
+      btn.innerText = "Ver menos";
     }
   }
 </script>
