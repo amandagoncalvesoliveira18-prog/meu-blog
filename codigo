@@ -9,6 +9,34 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
+      background: #fff0f5;
+      color: #333;
+    }
+
+    header {
+      background: #ff5c8a;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .container {
+      max-width: 900px;<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Blog de Gatinhos 🐱</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
       background-color: #fff6f9;
       color: #333;
     }
@@ -85,12 +113,76 @@
     <div class="cat-card">
       <h2>🐾 Gato SRD (Vira-lata)</h2>
       <p>Único e especial, cheio de personalidade e amor.</p>
+
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card h2 {
+      color: #ff3d6e;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #ff5c8a;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🐱 Meu Blog de Gatinhos</h1>
+    <p>Conheça diferentes tipos de gatinhos fofos!</p>
+  </header>
+
+  <main class="container">
+
+    <div class="card">
+      <h2>🐾 Gato Persa</h2>
+      <p>Calmo, peludo e muito fofinho. Adora descansar o dia inteiro.</p>
     </div>
 
-  </div>
+    <div class="card">
+      <h2>🐾 Siamês</h2>
+      <p>Inteligente e super comunicativo, gosta de atenção o tempo todo.</p>
+    </div>
+
+    <div class="card">
+      <h2>🐾 Maine Coon</h2>
+      <p>Grande, forte e amigável — parece um leão doméstico.</p>
+    </div>
+
+    <div class="card">
+      <h2>🐾 Sphynx</h2>
+      <p>Sem pelos, muito carinhoso e curioso com tudo ao redor.</p>
+    </div>
+
+    <div class="card">
+      <h2>🐾 Vira-lata (SRD)</h2>
+      <p>Único, especial e cheio de personalidade. Muito amor envolvido!</p>
+    </div>
+
+  </main>
 
   <footer>
-    <p>Feito com ❤️ para amantes de gatos</p>
+    <p>Feito com ❤️ por um amante de gatos</p>
   </footer>
 
 </body>
