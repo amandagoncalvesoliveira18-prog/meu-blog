@@ -9,19 +9,20 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #fff6f9;
+      background: #fff0f5;
       color: #333;
     }
 
     header {
-      background: #ff8fb1;
-      padding: 20px;
-      text-align: center;
+      background: #ff5c8a;
       color: white;
+      text-align: center;
+      padding: 30px 10px;
     }
 
     header h1 {
       margin: 0;
+      font-size: 2rem;
     }
 
     .container {
@@ -30,23 +31,27 @@
       padding: 20px;
     }
 
-    .cat-card {
+    .card {
       background: white;
-      border-radius: 12px;
+      margin: 15px 0;
       padding: 15px;
-      margin-bottom: 15px;
+      border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
     }
 
-    .cat-card h2 {
-      color: #ff4d7d;
-      margin-top: 0;
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card h2 {
+      color: #ff3d6e;
     }
 
     footer {
       text-align: center;
       padding: 15px;
-      background: #ff8fb1;
+      background: #ff5c8a;
       color: white;
       margin-top: 20px;
     }
@@ -56,41 +61,41 @@
 <body>
 
   <header>
-    <h1>🐱 Meu Blog de Gatinhos 🐱</h1>
-    <p>Descubra tipos fofos de gatos!</p>
+    <h1>🐱 Meu Blog de Gatinhos</h1>
+    <p>Conheça diferentes tipos de gatinhos fofos!</p>
   </header>
 
-  <div class="container">
+  <main class="container">
 
-    <div class="cat-card">
+    <div class="card">
       <h2>🐾 Gato Persa</h2>
-      <p>Fofinho, peludo e super calmo. Ama ficar deitado o dia todo.</p>
+      <p>Calmo, peludo e muito fofinho. Adora descansar o dia inteiro.</p>
     </div>
 
-    <div class="cat-card">
+    <div class="card">
       <h2>🐾 Siamês</h2>
-      <p>Falante e inteligente, adora interagir com humanos.</p>
+      <p>Inteligente e super comunicativo, gosta de atenção o tempo todo.</p>
     </div>
 
-    <div class="cat-card">
+    <div class="card">
       <h2>🐾 Maine Coon</h2>
-      <p>Gigante e gentil, parece um leãozinho doméstico.</p>
+      <p>Grande, forte e amigável — parece um leão doméstico.</p>
     </div>
 
-    <div class="cat-card">
+    <div class="card">
       <h2>🐾 Sphynx</h2>
-      <p>Sem pelos, muito carinhoso e curioso.</p>
+      <p>Sem pelos, muito carinhoso e curioso com tudo ao redor.</p>
     </div>
 
-    <div class="cat-card">
-      <h2>🐾 Gato SRD (Vira-lata)</h2>
-      <p>Único e especial, cheio de personalidade e amor.</p>
+    <div class="card">
+      <h2>🐾 Vira-lata (SRD)</h2>
+      <p>Único, especial e cheio de personalidade. Muito amor envolvido!</p>
     </div>
 
-  </div>
+  </main>
 
   <footer>
-    <p>Feito com ❤️ para amantes de gatos</p>
+    <p>Feito com ❤️ por um amante de gatos</p>
   </footer>
 
 </body>
