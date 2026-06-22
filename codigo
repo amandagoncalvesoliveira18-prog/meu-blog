@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Blog de Gatinhos 🐱</title>
 
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fff6f9;
+      color: #333;
+    }
+
+    header {
+      background: #ff8fb1;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .cat-card {
+      background: white;
+      border-radius: 12px;
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .cat-card h2 {
+      color: #ff4d7d;
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #ff8fb1;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🐱 Meu Blog de Gatinhos 🐱</h1>
+    <p>Descubra tipos fofos de gatos!</p>
+  </header>
+
+  <div class="container">
+
+    <div class="cat-card">
+      <h2>🐾 Gato Persa</h2>
+      <p>Fofinho, peludo e super calmo. Ama ficar deitado o dia todo.</p>
+    </div>
+
+    <div class="cat-card">
+      <h2>🐾 Siamês</h2>
+      <p>Falante e inteligente, adora interagir com humanos.</p>
+    </div>
+
+    <div class="cat-card">
+      <h2>🐾 Maine Coon</h2>
+      <p>Gigante e gentil, parece um leãozinho doméstico.</p>
+    </div>
+
+    <div class="cat-card">
+      <h2>🐾 Sphynx</h2>
+      <p>Sem pelos, muito carinhoso e curioso.</p>
+    </div>
+
+    <div class="cat-card">
+      <h2>🐾 Gato SRD (Vira-lata)</h2>
+      <p>Único e especial, cheio de personalidade e amor.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Feito com ❤️ para amantes de gatos</p>
+  </footer>
+
+</body>
+</html>
