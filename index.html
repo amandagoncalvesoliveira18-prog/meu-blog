@@ -13,7 +13,7 @@
     }
 
     header {
-      background: #ff4f88;
+      background: linear-gradient(90deg, #ff4f88, #ff86b0);
       color: white;
       text-align: center;
       padding: 25px;
@@ -47,15 +47,6 @@
       color: #ff2f6d;
     }
 
-    .tag {
-      display: inline-block;
-      background: #ffe1ec;
-      color: #ff2f6d;
-      padding: 5px 10px;
-      border-radius: 20px;
-      font-size: 12px;
-    }
-
     button {
       margin-top: 10px;
       background: #ff4f88;
@@ -69,14 +60,13 @@
     .info {
       display: none;
       margin-top: 10px;
-      line-height: 1.5;
     }
 
     footer {
       text-align: center;
-      padding: 15px;
       background: #ff4f88;
       color: white;
+      padding: 15px;
       margin-top: 20px;
     }
   </style>
@@ -86,82 +76,87 @@
 
 <header>
   <h1>🐱 Blog dos Gatinhos Fofos</h1>
-  <p>As raças mais lindas e conhecidas do mundo!</p>
+  <p>Raças lindas com imagens reais da internet</p>
 </header>
 
 <div class="container">
 
   <!-- SIAMES -->
   <div class="card">
-    <img src="siames.jpg" alt="Siamês">
+    <img src="https://images.unsplash.com/photo-1511044568932-338cba0ad803?auto=format&fit=crop&w=1200&q=80" alt="Siamês">
     <div class="content">
-      <span class="tag">Falante</span>
       <h2>🐾 Siamês</h2>
-      <p>Extremamente comunicativo e inteligente.</p>
+      <p>Inteligente, falante e muito carinhoso.</p>
+
       <button onclick="toggle(this)">Ver mais</button>
       <div class="info">
-        <p><strong>Origem:</strong> Tailândia</p>
-        <p><strong>Personalidade:</strong> ativo e carinhoso</p>
+        <p>Origem: Tailândia</p>
+        <p>Conhecido por “conversar” com humanos</p>
+        <p>Super sociável</p>
       </div>
     </div>
   </div>
 
   <!-- MAINE COON -->
   <div class="card">
-    <img src="mainecoon.jpg" alt="Maine Coon">
+    <img src="https://images.unsplash.com/photo-1615789591457-74a63395c990?auto=format&fit=crop&w=1200&q=80" alt="Maine Coon">
     <div class="content">
-      <span class="tag">Gigante gentil</span>
       <h2>🐾 Maine Coon</h2>
       <p>Um dos maiores gatos domésticos do mundo.</p>
+
       <button onclick="toggle(this)">Ver mais</button>
       <div class="info">
-        <p><strong>Origem:</strong> Estados Unidos</p>
-        <p><strong>Personalidade:</strong> dócil e brincalhão</p>
+        <p>Origem: EUA</p>
+        <p>Muito dócil e brincalhão</p>
+        <p>Pode pesar mais de 10kg</p>
       </div>
     </div>
   </div>
 
   <!-- PERSA -->
   <div class="card">
-    <img src="persa.jpg" alt="Persa">
+    <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=1200&q=80" alt="Persa">
     <div class="content">
-      <span class="tag">Calmo</span>
       <h2>🐾 Persa</h2>
-      <p>Peludo, elegante e muito tranquilo.</p>
+      <p>Peludo, elegante e muito calmo.</p>
+
       <button onclick="toggle(this)">Ver mais</button>
       <div class="info">
-        <p><strong>Origem:</strong> Irã</p>
-        <p><strong>Personalidade:</strong> relaxado e carinhoso</p>
+        <p>Origem: Irã</p>
+        <p>Gosta de ambientes tranquilos</p>
+        <p>Precisa escovação diária</p>
       </div>
     </div>
   </div>
 
   <!-- AZUL RUSSO -->
   <div class="card">
-    <img src="azulrusso.jpg" alt="Azul Russo">
+    <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=1200&q=80" alt="Azul Russo">
     <div class="content">
-      <span class="tag">Elegante</span>
       <h2>🐾 Azul Russo</h2>
-      <p>Gato silencioso, bonito e muito inteligente.</p>
+      <p>Elegante, silencioso e muito inteligente.</p>
+
       <button onclick="toggle(this)">Ver mais</button>
       <div class="info">
-        <p><strong>Origem:</strong> Rússia</p>
-        <p><strong>Personalidade:</strong> tímido e afetuoso</p>
+        <p>Origem: Rússia</p>
+        <p>Pelagem cinza azulada linda</p>
+        <p>Calmo e observador</p>
       </div>
     </div>
   </div>
 
   <!-- BOMBAIM -->
   <div class="card">
-    <img src="bombaim.jpg" alt="Bombaim">
+    <img src="https://images.unsplash.com/photo-1618826411640-df7c2f3a7a9b?auto=format&fit=crop&w=1200&q=80" alt="Bombaim">
     <div class="content">
-      <span class="tag">Pantera mini</span>
       <h2>🐾 Bombaim</h2>
-      <p>Gato preto brilhante que lembra uma pantera.</p>
+      <p>O “mini pantera” preto brilhante.</p>
+
       <button onclick="toggle(this)">Ver mais</button>
       <div class="info">
-        <p><strong>Origem:</strong> EUA</p>
-        <p><strong>Personalidade:</strong> brincalhão e carinhoso</p>
+        <p>Origem: EUA</p>
+        <p>Brincalhão e carinhoso</p>
+        <p>Parece uma pantera pequena 🐆</p>
       </div>
     </div>
   </div>
@@ -175,6 +170,7 @@
 <script>
   function toggle(btn) {
     const info = btn.nextElementSibling;
+
     if (info.style.display === "block") {
       info.style.display = "none";
       btn.innerText = "Ver mais";
